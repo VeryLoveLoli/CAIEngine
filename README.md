@@ -1,3 +1,16 @@
 # CAIEngine
 
-A description of this package.
+驰声声音评测 2.2.21+2.0.7.1 SDK XCFramework SwiftPackage
+
+### 工程引用
+
+在 `Link Binary With Libraries` 添加 `libz.tbd` `libc++.tbd` `libsqlite3.tbd` `AVFoundation.framework` `CoreGraphics.framework` `AuidoToolbox.framework` `Security.framework` `SystemConfiguration.farmework`
+
+### SwiftPackage 引用
+
+```swift
+.target(
+    name: "Name",
+    dependencies: ["SingSoundEvaluating"],
+    linkerSettings: [.linkedLibrary("z"), .linkedLibrary("c++"), .linkedLibrary("sqlite3"), .linkedFramework("AVFoundation"), .linkedFramework("CoreGraphics"), .linkedFramework("AuidoToolbox"), .linkedFramework("Security"), .linkedFramework("SystemConfiguration")]),
+```

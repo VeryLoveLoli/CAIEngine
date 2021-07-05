@@ -1,0 +1,6 @@
+framework module CAIEngine {
+  umbrella header "CAIEngine.h"
+
+  export *
+  module * { export * }
+}
