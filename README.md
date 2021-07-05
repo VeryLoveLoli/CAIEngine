@@ -4,7 +4,7 @@
 
 ### 工程引用
 
-在 `Link Binary With Libraries` 添加 `libz.tbd` `libc++.tbd` `libsqlite3.tbd` `AVFoundation.framework` `CoreGraphics.framework` `AuidoToolbox.framework` `Security.framework` `SystemConfiguration.farmework`
+在 `Link Binary With Libraries` 添加 `libz.tbd` `libc++.tbd` `libsqlite3.tbd` `AVFoundation.framework` `CoreGraphics.framework` `AudioToolbox.framework` `Security.framework` `SystemConfiguration.farmework`
 
 ### SwiftPackage 引用
 
@@ -12,5 +12,5 @@
 .target(
     name: "Name",
     dependencies: ["CAIEngine"],
-    linkerSettings: [.linkedLibrary("z"), .linkedLibrary("c++"), .linkedLibrary("sqlite3"), .linkedFramework("AVFoundation"), .linkedFramework("CoreGraphics"), .linkedFramework("AuidoToolbox"), .linkedFramework("Security"), .linkedFramework("SystemConfiguration")]),
+    linkerSettings: [.linkedLibrary("z"), .linkedLibrary("c++"), .linkedLibrary("sqlite3"), .linkedFramework("AVFoundation"), .linkedFramework("CoreGraphics"), .linkedFramework("AudioToolbox"), .linkedFramework("Security"), .linkedFramework("SystemConfiguration")]),
 ```
