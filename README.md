@@ -11,6 +11,6 @@
 ```swift
 .target(
     name: "Name",
-    dependencies: ["SingSoundEvaluating"],
+    dependencies: ["CAIEngine"],
     linkerSettings: [.linkedLibrary("z"), .linkedLibrary("c++"), .linkedLibrary("sqlite3"), .linkedFramework("AVFoundation"), .linkedFramework("CoreGraphics"), .linkedFramework("AuidoToolbox"), .linkedFramework("Security"), .linkedFramework("SystemConfiguration")]),
 ```
